@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:padding="16dp">
+
+        <!-- Medication Name -->
+        <TextView
+            android:id="@+id/medicationNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medication Name"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Paracetamol" />
+
+        <!-- Medication Description -->
+        <TextView
+            android:id="@+id/medicationDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Medication Description"
+            android:textColor="@android:color/black"
+            tools:text="Take 1 tablet every 6 hours as needed for pain." />
+
+        <!-- Medication Strength -->
+        <TextView
+            android:id="@+id/medicationStrengthTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Strength: 500mg"
+            android:textColor="@android:color/black"
+            tools:text="Strength: 500mg" />
+
+        <!-- Medication Dosage -->
+        <TextView
+            android:id="@+id/medicationDosageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Dosage: 1 tablet"
+            android:textColor="@android:color/black"
+            tools:text="Dosage: 1 tablet" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
